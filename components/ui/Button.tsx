@@ -1,16 +1,18 @@
 "use client";
 
-import { ButtonHTMLAttributes, ReactNode } from "react";
-import { motion } from "framer-motion";
+import { ReactNode } from "react";
+import { motion, HTMLMotionProps } from "framer-motion";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
     children: ReactNode;
     variant?: "primary" | "outline" | "text";
     size?: "sm" | "md" | "lg" | "xl";
     className?: string;
 }
+
+type MotionButtonProps = ButtonProps & Omit<HTMLMotionProps<"button">, keyof ButtonProps>;
 
 export function Button({
     children,
@@ -18,7 +20,7 @@ export function Button({
     size = "md",
     className,
     ...props
-}: ButtonProps) {
+}: MotionButtonProps) {
     const baseStyles = "rounded-full transition-all duration-300 font-bold items-center justify-center inline-flex cursor-pointer";
 
     const variants = {
@@ -46,3 +48,4 @@ export function Button({
         </motion.button>
     );
 }
+
