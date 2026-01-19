@@ -33,7 +33,7 @@ export function Instructor() {
                                         src="/assets/instructor.png"
                                         alt="前野 真奈"
                                         fill
-                                        className="object-cover"
+                                        className="object-contain"
                                     />
                                 </div>
                             </FadeIn>

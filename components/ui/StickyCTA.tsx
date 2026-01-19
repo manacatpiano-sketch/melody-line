@@ -44,7 +44,10 @@ export function StickyCTA() {
                                     </p>
                                 </div>
                                 <Button size="lg" className="w-full md:w-auto shrink-0 md:min-w-[280px]">
-                                    LINE で無料相談する
+                                    <div className="flex flex-col items-center gap-0.5">
+                                        <span className="font-bold">無料で相談してみる</span>
+                                        <span className="text-xs opacity-90">LINE登録30秒</span>
+                                    </div>
                                 </Button>
                             </div>
                         </div>

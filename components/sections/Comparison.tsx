@@ -36,7 +36,7 @@ export function Comparison() {
                 <FadeIn direction="up">
                     <div className="text-center mb-12 md:mb-16">
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
-                            なぜ、Melody Lineなのか
+                            なぜ、Melody LINEなのか
                         </h2>
                         <p className="text-gray-300">一般的な教室との違い</p>
                     </div>
@@ -55,7 +55,7 @@ export function Comparison() {
                                     一般的なピアノ教室
                                 </div>
                                 <div className="bg-accent-gold/20 p-6 flex flex-col items-center justify-center font-bold text-accent-gold relative border-l border-b border-accent-gold/50">
-                                    Melody Line
+                                    Melody LINE
                                     <div className="absolute top-2 right-2 bg-accent-gold text-primary-navy text-xs px-2 py-0.5 font-bold rounded">RECOMMEND</div>
                                 </div>
 
@@ -86,30 +86,35 @@ export function Comparison() {
                     </FadeIn>
                 </div>
 
-                {/* Mobile: Card layout */}
-                <div className="md:hidden space-y-5 px-4">
+                {/* Mobile: Card layout - Improved */}
+                <div className="md:hidden space-y-6 px-4">
                     {comparisonItems.map((item, i) => (
                         <FadeIn key={i} direction="up" delay={i * 0.1}>
-                            <GlassCard className="p-5">
-                                {/* Item Label */}
-                                <div className="mb-4 pb-3 border-b border-white/20">
-                                    <span className="font-bold text-white text-base">{item.label}</span>
+                            <GlassCard className="p-6">
+                                {/* Item Label - 大きく目立たせる */}
+                                <div className="mb-5 text-center">
+                                    <h3 className="font-bold text-white text-xl mb-1">{item.label}</h3>
+                                    <div className="w-12 h-1 bg-accent-gold/50 mx-auto mt-2 rounded-full"></div>
                                 </div>
 
-                                {/* Traditional - smaller, muted */}
-                                <div className="flex items-center gap-3 text-gray-400 text-sm mb-4 pb-4 border-b border-white/10">
-                                    {item.traditionalBad && <X className="w-4 h-4 shrink-0 text-red-400" />}
-                                    <span className="line-through">{item.traditional}</span>
-                                    <span className="text-xs bg-white/10 px-2 py-1 rounded ml-auto shrink-0">一般的</span>
-                                </div>
-
-                                {/* Melody Line - prominent */}
-                                <div className="flex items-center gap-3">
-                                    <div className="bg-accent-gold rounded-full p-2 shrink-0">
-                                        <Check className="w-4 h-4 text-primary-navy" />
+                                {/* Traditional - 控えめに */}
+                                <div className="mb-5 p-4 rounded-lg bg-white/5 border border-white/10">
+                                    <div className="flex items-center justify-between mb-2">
+                                        <span className="text-xs text-gray-500 font-medium">一般的な教室</span>
+                                        {item.traditionalBad && <X className="w-4 h-4 text-red-400" />}
                                     </div>
-                                    <span className="text-white font-bold text-lg">{item.melodyLine}</span>
-                                    <span className="text-xs bg-accent-gold text-primary-navy px-2 py-1 rounded ml-auto shrink-0 font-bold">Melody Line</span>
+                                    <p className="text-gray-400 text-base line-through">{item.traditional}</p>
+                                </div>
+
+                                {/* Melody LINE - 強調 */}
+                                <div className="p-5 rounded-lg bg-gradient-to-br from-accent-gold/20 to-accent-gold/10 border-2 border-accent-gold/50">
+                                    <div className="flex items-center justify-between mb-3">
+                                        <span className="text-xs bg-accent-gold text-primary-navy px-3 py-1 rounded-full font-bold">Melody LINE</span>
+                                        <div className="bg-accent-gold rounded-full p-1.5">
+                                            <Check className="w-4 h-4 text-primary-navy" />
+                                        </div>
+                                    </div>
+                                    <p className="text-white font-bold text-lg leading-relaxed">{item.melodyLine}</p>
                                 </div>
                             </GlassCard>
                         </FadeIn>

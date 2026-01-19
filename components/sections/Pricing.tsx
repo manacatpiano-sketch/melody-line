@@ -19,7 +19,7 @@ export function Pricing() {
                             あなたに合わせた指導プラン
                         </h2>
                         <p className="text-gray-300 text-lg md:text-xl">
-                            桐朋の研鑽を、あなたの日常の練習に。
+                            桐朋の研鑽を、<br className="md:hidden" />あなたの日常の練習に。
                         </p>
                     </FadeIn>
                 </div>
@@ -82,7 +82,8 @@ export function Pricing() {
                                     <h3 className="text-xl font-bold text-white">スタンダード</h3>
                                 </div>
 
-                                <div className="mb-2">
+                                <div className="mb-4">
+                                    <p className="text-gray-400 line-through text-lg mb-1">通常価格: ¥9,800/月</p>
                                     <span className="text-5xl font-bold bg-gradient-to-r from-accent-gold to-yellow-300 bg-clip-text text-transparent">¥5,980</span>
                                     <span className="text-gray-300 ml-2">/ 月（税込）</span>
                                 </div>

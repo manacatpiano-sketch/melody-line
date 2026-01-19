@@ -14,7 +14,7 @@ export function Closing() {
             <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
                 <FadeIn direction="up">
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-8 leading-relaxed md:leading-tight">
-                        あなたの演奏が変わる<br className="hidden md:block" />チャンスは、<br />たった1通のLINEから。
+                        あなたの演奏が変わるチャンスは、<br className="md:hidden" />たった1通のLINEから。
                     </h2>
                 </FadeIn>
 
@@ -49,8 +49,8 @@ export function Closing() {
                         className="w-full md:w-auto mb-4"
                     >
                         <div className="flex flex-col items-center gap-1">
-                            <span>LINE友だち追加して演奏を送る</span>
-                            <span className="text-xs opacity-90">24時間いつでも送信OK</span>
+                            <span className="text-lg font-bold">上達の第一歩を踏み出す →</span>
+                            <span className="text-xs opacity-90">LINE登録→無料相談→最短24時間で変化</span>
                         </div>
                     </Button>
 

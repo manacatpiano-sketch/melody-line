@@ -11,7 +11,7 @@ export function Solution() {
         },
         {
             icon: BookOpen,
-            title: "楽譜に残る、詳細アドバイス",
+            title: "楽譜に残る、プロの添削",
             desc: "感覚的な言葉だけでなく、楽譜への具体的な書き込みで指示。何度でも見返せます。"
         },
         {

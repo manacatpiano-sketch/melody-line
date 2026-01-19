@@ -38,17 +38,18 @@ export function Hero() {
                     </p>
                     <h1 className="font-serif font-bold text-white mb-6 md:mb-10 leading-relaxed tracking-wide drop-shadow-2xl">
                         <span className="block text-xl md:text-3xl lg:text-4xl mb-3 md:mb-5">
-                            あなたの演奏動画を送るだけ。
+                            あなたの演奏動画を送るだけ
                         </span>
                         <span className="block text-3xl md:text-5xl lg:text-6xl bg-gradient-to-r from-accent-gold via-yellow-300 to-accent-gold bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(203,161,53,0.8)]">
-                            24時間以内にプロが添削。
+                            「なぜ上達しないのか」が、<br className="md:hidden" />24時間でわかる。
                         </span>
                     </h1>
                 </FadeIn>
 
                 <FadeIn direction="up" delay={0.2}>
                     <p className="text-base md:text-xl text-gray-100 mb-10 md:mb-14 max-w-2xl mx-auto font-medium drop-shadow-lg leading-relaxed">
-                        楽譜に書き込む形でアドバイスが届くから、<br className="md:hidden" />見返せる・忘れない。
+                        あなたの演奏の「どこを直せば劇的に変わるか」を、プロが言語化。<br />
+                        忘れない・見返せる・確実に上達。
                     </p>
                 </FadeIn>
 
@@ -70,10 +71,13 @@ export function Hero() {
                 {/* CTA */}
                 <FadeIn direction="up" delay={0.4} className="flex flex-col items-center justify-center">
                     <Button size="xl" className="w-full md:w-auto mb-4">
-                        LINEで無料相談する
+                        <div className="flex flex-col items-center gap-1">
+                            <span className="text-lg font-bold">30秒で相談スタート →</span>
+                            <span className="text-xs opacity-90">今すぐLINE追加（無料）</span>
+                        </div>
                     </Button>
                     <p className="text-xs md:text-sm text-gray-300 font-medium drop-shadow-sm">
-                        ※登録は無料です
+                        ※しつこい勧誘は一切ありません
                     </p>
                 </FadeIn>
 
