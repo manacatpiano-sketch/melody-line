@@ -14,7 +14,7 @@ export function Closing() {
             <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
                 <FadeIn direction="up">
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-8 leading-relaxed md:leading-tight">
-                        あなたの演奏が変わるチャンスは、<br className="md:hidden" />たった1通のLINEから。
+                        あなたの演奏が<br className="md:hidden" />変わるチャンスは、<br />たった1通のLINEから。
                     </h2>
                 </FadeIn>
 

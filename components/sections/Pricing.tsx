@@ -16,7 +16,7 @@ export function Pricing() {
                 <div className="text-center mb-16 md:mb-20">
                     <FadeIn direction="up">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
-                            あなたに合わせた指導プラン
+                            あなたに合わせた<br className="md:hidden" />指導プラン
                         </h2>
                         <p className="text-gray-300 text-lg md:text-xl">
                             桐朋の研鑽を、<br className="md:hidden" />あなたの日常の練習に。
@@ -55,7 +55,7 @@ export function Pricing() {
                                 </li>
                                 <li className="flex items-start gap-3 text-sm text-gray-200">
                                     <Check className="w-4 h-4 text-accent-gold mt-0.5 shrink-0" />
-                                    <span>心理的障壁を下げる「体験」の入り口</span>
+                                    <span>心理的障壁を下げる<br className="md:hidden" />「体験」の入り口</span>
                                 </li>
                             </ul>
 

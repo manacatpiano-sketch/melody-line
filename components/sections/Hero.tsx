@@ -41,7 +41,7 @@ export function Hero() {
                             あなたの演奏動画を送るだけ
                         </span>
                         <span className="block text-3xl md:text-5xl lg:text-6xl bg-gradient-to-r from-accent-gold via-yellow-300 to-accent-gold bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(203,161,53,0.8)]">
-                            「なぜ上達しないのか」が、<br className="md:hidden" />24時間でわかる。
+                            「なぜ上達しないのか」が、<br />24時間でわかる。
                         </span>
                     </h1>
                 </FadeIn>

@@ -36,7 +36,7 @@ export function Comparison() {
                 <FadeIn direction="up">
                     <div className="text-center mb-12 md:mb-16">
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
-                            なぜ、Melody LINEなのか
+                            なぜ、<br className="md:hidden" />Melody LINEなのか
                         </h2>
                         <p className="text-gray-300">一般的な教室との違い</p>
                     </div>

@@ -25,8 +25,7 @@ export function Proof() {
                 <div className="text-center mb-16">
                     <FadeIn direction="up">
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white">
-                            読むだけで音が変わる。<br />
-                            「魔法の処方箋」をお届けします。
+                            読むだけで音が変わる。<br />「魔法の処方箋」を<br className="md:hidden" />お届けします。
                         </h2>
                     </FadeIn>
                 </div>

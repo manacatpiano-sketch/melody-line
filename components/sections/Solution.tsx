@@ -26,7 +26,7 @@ export function Solution() {
             <div className="text-center mb-16">
                 <FadeIn direction="up">
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary-navy">
-                        そのモヤモヤ、<br className="md:hidden" />プロの「客観的な視点」が解決します。
+                        そのモヤモヤ、<br />プロの「客観的な視点」が<br className="md:hidden" />解決します。
                     </h2>
                 </FadeIn>
             </div>
