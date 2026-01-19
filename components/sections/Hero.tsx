@@ -70,12 +70,14 @@ export function Hero() {
 
                 {/* CTA */}
                 <FadeIn direction="up" delay={0.4} className="flex flex-col items-center justify-center">
-                    <Button size="xl" className="w-full md:w-auto mb-4">
-                        <div className="flex flex-col items-center gap-1">
-                            <span className="text-lg font-bold">30秒で相談スタート →</span>
-                            <span className="text-xs opacity-90">今すぐLINE追加（無料）</span>
-                        </div>
-                    </Button>
+                    <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto">
+                        <Button size="xl" className="w-full md:w-auto mb-4">
+                            <div className="flex flex-col items-center gap-1">
+                                <span className="text-lg font-bold">30秒で相談スタート →</span>
+                                <span className="text-xs opacity-90">今すぐLINE追加（無料）</span>
+                            </div>
+                        </Button>
+                    </a>
                     <p className="text-xs md:text-sm text-gray-300 font-medium drop-shadow-sm">
                         ※しつこい勧誘は一切ありません
                     </p>

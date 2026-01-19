@@ -44,15 +44,17 @@ export function Closing() {
                 </FadeIn>
 
                 <FadeIn direction="up" delay={0.4}>
-                    <Button
-                        size="xl"
-                        className="w-full md:w-auto mb-4"
-                    >
-                        <div className="flex flex-col items-center gap-1">
-                            <span className="text-lg font-bold">上達の第一歩を踏み出す →</span>
-                            <span className="text-xs opacity-90">LINE登録→無料相談→最短24時間で変化</span>
-                        </div>
-                    </Button>
+                    <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="inline-block">
+                        <Button
+                            size="xl"
+                            className="w-full md:w-auto mb-4"
+                        >
+                            <div className="flex flex-col items-center gap-1">
+                                <span className="text-lg font-bold">上達の第一歩を踏み出す →</span>
+                                <span className="text-xs opacity-90">LINE登録→無料相談→最短24時間で変化</span>
+                            </div>
+                        </Button>
+                    </a>
 
                     <p className="text-sm text-gray-200 mt-3">
                         ※登録は無料です

@@ -160,7 +160,7 @@ export function Pricing() {
                                 </li>
                             </ul>
 
-                            <a href="#" className="w-full">
+                            <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="w-full">
                                 <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-primary-navy py-5">
                                     LINEで相談する
                                 </Button>

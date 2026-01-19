@@ -103,12 +103,14 @@ export function ExitIntentPopup() {
                                     </p>
 
                                     {/* CTA */}
-                                    <Button
-                                        size="lg"
-                                        className="w-full mb-3"
-                                    >
-                                        無料で相談してみる
-                                    </Button>
+                                    <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="inline-block w-full">
+                                        <Button
+                                            size="lg"
+                                            className="w-full mb-3"
+                                        >
+                                            無料で相談してみる
+                                        </Button>
+                                    </a>
                                     <p className="text-xs text-gray-400">
                                         ※しつこい勧誘は一切ありません
                                     </p>

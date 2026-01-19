@@ -43,12 +43,14 @@ export function StickyCTA() {
                                         ※月間の指導枠には限りがあります
                                     </p>
                                 </div>
-                                <Button size="lg" className="w-full md:w-auto shrink-0 md:min-w-[280px]">
-                                    <div className="flex flex-col items-center gap-0.5">
-                                        <span className="font-bold">無料で相談してみる</span>
-                                        <span className="text-xs opacity-90">LINE登録30秒</span>
-                                    </div>
-                                </Button>
+                                <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="inline-block shrink-0">
+                                    <Button size="lg" className="w-full md:w-auto shrink-0 md:min-w-[280px]">
+                                        <div className="flex flex-col items-center gap-0.5">
+                                            <span className="font-bold">無料で相談してみる</span>
+                                            <span className="text-xs opacity-90">LINE登録30秒</span>
+                                        </div>
+                                    </Button>
+                                </a>
                             </div>
                         </div>
                     </div>
