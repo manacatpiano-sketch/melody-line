@@ -94,8 +94,8 @@ export function ExitIntentPopup() {
 
                                 {/* Content */}
                                 <div className="text-center">
-                                    <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
-                                        ちょっと<wbr />待ってください！
+                                    <h3 className="text-xl md:text-3xl font-serif font-bold text-white mb-4">
+                                        ちょっと待ってください！
                                     </h3>
                                     <p className="text-gray-300 mb-6 leading-relaxed">
                                         まずは気軽に相談してみませんか？<br />
