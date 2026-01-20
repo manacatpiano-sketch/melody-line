@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Noto_Serif_JP, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 
 export const viewport: Viewport = {
     width: "device-width",
@@ -61,8 +62,10 @@ export const metadata: Metadata = {
         },
     },
     verification: {
-        // Google Search Console verification (後で追加)
-        // google: "your-verification-code",
+        google: "lKSHcjTyzjj_Z2DTK9E8UVw99kXBrNTfMjU9p0fGIgA",
+    },
+    other: {
+        "google-site-verification": "lKSHcjTyzjj_Z2DTK9E8UVw99kXBrNTfMjU9p0fGIgA",
     },
 };
 
@@ -73,6 +76,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ja">
+            <GoogleAnalytics />
             <body className={`${notoSerif.variable} ${notoSans.variable} font-sans text-text-body bg-bg-cream antialiased`}>
                 {children}
             </body>
