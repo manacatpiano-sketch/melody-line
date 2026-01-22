@@ -60,7 +60,7 @@ export function Pricing() {
                             </ul>
 
 
-                            <a href="https://buy.stripe.com/test_00weVd9Bm7TxfN4fGp5c400" target="_blank" rel="noopener noreferrer" className="w-full">
+                            <a href="https://buy.stripe.com/7sYdRb60M16Z59p6yq8Vi02" target="_blank" rel="noopener noreferrer" className="w-full">
                                 <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-primary-navy py-5">
                                     今すぐ体験する
                                 </Button>
@@ -114,7 +114,7 @@ export function Pricing() {
                                     </li>
                                 </ul>
 
-                                <a href="https://buy.stripe.com/test_7sY4gzeVGa1FdEW8dX5c402" target="_blank" rel="noopener noreferrer" className="w-full">
+                                <a href="https://buy.stripe.com/fZucN7exi6rjdFVf4W8Vi00" target="_blank" rel="noopener noreferrer" className="w-full">
                                     <Button variant="primary" size="lg" className="w-full py-5">
                                         今すぐ始める
                                     </Button>
