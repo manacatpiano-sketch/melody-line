@@ -51,7 +51,7 @@ export function Pricing() {
                                 </li>
                                 <li className="flex items-start gap-3 text-sm text-gray-200">
                                     <Check className="w-4 h-4 text-accent-gold mt-0.5 shrink-0" />
-                                    <span>動画1本・200文字程度のアドバイス</span>
+                                    <span>動画1本・300文字程度のアドバイス</span>
                                 </li>
                                 <li className="flex items-start gap-3 text-sm text-gray-200">
                                     <Check className="w-4 h-4 text-accent-gold mt-0.5 shrink-0" />
@@ -59,10 +59,16 @@ export function Pricing() {
                                 </li>
                             </ul>
 
+                            <p className="text-xs text-gray-400 mb-4">
+                                ※申込み・料金の詳細はLINE内でご案内します
+                            </p>
 
-                            <a href="https://buy.stripe.com/7sYdRb60M16Z59p6yq8Vi02" target="_blank" rel="noopener noreferrer" className="w-full">
+                            <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="w-full">
                                 <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-primary-navy py-5">
-                                    今すぐ体験する
+                                    <div className="flex flex-col items-center gap-1">
+                                        <span className="font-bold">無料添削の枠を確保する</span>
+                                        <span className="text-xs opacity-90">（LINE追加）</span>
+                                    </div>
                                 </Button>
                             </a>
                         </GlassCard>
@@ -114,9 +120,16 @@ export function Pricing() {
                                     </li>
                                 </ul>
 
-                                <a href="https://buy.stripe.com/fZucN7exi6rjdFVf4W8Vi00" target="_blank" rel="noopener noreferrer" className="w-full">
+                                <p className="text-xs text-gray-300 mb-4">
+                                    ※申込み・料金の詳細はLINE内でご案内します
+                                </p>
+
+                                <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="w-full">
                                     <Button variant="primary" size="lg" className="w-full py-5">
-                                        今すぐ始める
+                                        <div className="flex flex-col items-center gap-1">
+                                            <span className="font-bold">無料添削の枠を確保する</span>
+                                            <span className="text-xs opacity-90">（LINE追加）</span>
+                                        </div>
                                     </Button>
                                 </a>
                             </GlassCard>
@@ -160,9 +173,16 @@ export function Pricing() {
                                 </li>
                             </ul>
 
+                            <p className="text-xs text-gray-300 mb-4">
+                                ※申込み・料金の詳細はLINE内でご案内します
+                            </p>
+
                             <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="w-full">
                                 <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-primary-navy py-5">
-                                    LINEで相談する
+                                    <div className="flex flex-col items-center gap-1">
+                                        <span className="font-bold">無料添削の枠を確保する</span>
+                                        <span className="text-xs opacity-90">（LINE追加）</span>
+                                    </div>
                                 </Button>
                             </a>
                         </GlassCard>

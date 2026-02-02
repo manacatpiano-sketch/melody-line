@@ -1,32 +1,28 @@
+"use client";
+
 import { Section } from "@/components/ui/Section";
 import FadeIn from "@/components/ui/FadeIn";
-import { Camera, Send, FileCheck, MessageCircle } from "lucide-react";
+import { MessageCircle, FileText, Camera } from "lucide-react";
 
 export function Process() {
     const steps = [
         {
-            icon: Camera,
-            step: "Step 01",
-            title: "演奏を撮影",
-            desc: "スマホのカメラであなたの演奏を撮影してください。手元が映っていればOKです。"
-        },
-        {
-            icon: Send,
-            step: "Step 02",
-            title: "LINEで送信",
-            desc: "演奏動画と、お手持ちの楽譜の写真をLINEでお送りください。どの出版社の楽譜でも、あなたに合わせて丁寧に添削します。"
-        },
-        {
-            icon: FileCheck,
-            step: "Step 03",
-            title: "プロが分析・添削",
-            desc: "24時間以内に、プロの講師があなたの演奏を徹底的に分析し、楽譜に書き込みます。"
-        },
-        {
             icon: MessageCircle,
-            step: "Step 04",
-            title: "フィードバック",
-            desc: "書き込み済み楽譜と、詳細なコメントがLINEで届きます。質問も可能です。"
+            step: "Step 01",
+            title: "LINE追加",
+            desc: "友だち追加後「無料添削希望」と送信"
+        },
+        {
+            icon: FileText,
+            step: "Step 02",
+            title: "悩みを伝える",
+            desc: "リズム、指使い、強弱など、気になる点を教えてください"
+        },
+        {
+            icon: Camera,
+            step: "Step 03",
+            title: "動画を送る",
+            desc: "手元だけでOK"
         }
     ];
 
@@ -42,7 +38,7 @@ export function Process() {
             </FadeIn>
 
             <div className="max-w-6xl mx-auto">
-                <div className="grid md:grid-cols-4 gap-8 relative">
+                <div className="grid md:grid-cols-3 gap-8 relative">
                     {/* Connector Line (Desktop) */}
                     <div className="hidden md:block absolute top-[60px] left-[10%] right-[10%] h-[2px] bg-gray-200 z-0" />
 

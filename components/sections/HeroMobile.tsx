@@ -7,14 +7,14 @@ import Image from "next/image";
 import { Check } from "lucide-react";
 import { trackEvent } from "@/lib/analytics/events";
 
-export function Hero() {
+export function HeroMobile() {
     const benefits = [
         "顔出し不要・手元だけでOK",
         "受付は24時間／返信は原則24時間以内"
     ];
 
     return (
-        <Section fullWidth className="hidden md:flex min-h-[100dvh] items-center justify-center p-0 relative overflow-hidden">
+        <Section fullWidth className="md:hidden h-[100svh] flex items-center justify-center p-0 relative overflow-hidden pb-[80px]">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -31,50 +31,57 @@ export function Hero() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 text-center px-4 md:px-6 max-w-4xl mx-auto w-full py-12 md:py-20">
+            <div className="relative z-10 text-center px-4 w-full h-full flex flex-col justify-center">
                 <FadeIn direction="up">
-                    <p className="text-accent-gold font-bold text-lg mb-6 tracking-widest animate-gentle-glow">
+                    <p className="text-accent-gold font-bold text-sm mb-3 tracking-widest animate-gentle-glow">
                         ＼ 今月限定！先着10名様 キャンペーン ／
                     </p>
-                    <div className="mb-6">
-                        <p className="text-4xl lg:text-5xl font-bold text-white mb-3 leading-tight">
+                    <div className="mb-4">
+                        <p className="text-2xl font-bold text-white mb-2 leading-tight">
                             LINEで動画を送るだけ♪
                         </p>
-                        <p className="text-2xl lg:text-3xl font-bold text-accent-gold">
+                        <p className="text-xl font-bold text-accent-gold">
                             あなたの演奏をプロが添削！
                         </p>
                     </div>
-                    <h1 className="font-serif font-bold text-white mb-8 leading-tight">
-                        <span className="block text-3xl lg:text-4xl mb-4">
-                            ピアノLINEレッスン<br />
-                            <span className="text-accent-gold">無料体験</span>（ワンフレーズ添削1回）
+                    <h1 className="font-serif font-bold text-white mb-4 leading-tight">
+                        <span className="block text-2xl mb-2">
+                            ピアノLINEレッスン
                         </span>
-                        <span className="block text-xl lg:text-2xl bg-gradient-to-r from-accent-gold via-yellow-300 to-accent-gold bg-clip-text text-transparent">
-                            短い動画でOK。<br />
-                            直すべき1点と今日の練習がわかります。
+                        <span className="block text-xl bg-gradient-to-r from-accent-gold via-yellow-300 to-accent-gold bg-clip-text text-transparent">
+                            <span className="text-accent-gold">無料体験</span>（ワンフレーズ添削1回）
                         </span>
                     </h1>
                 </FadeIn>
 
+                <FadeIn direction="up" delay={0.1}>
+                    <p className="text-base text-gray-100 mb-4 leading-relaxed px-2">
+                        短い動画でOK。<br />
+                        直すべき1点と今日の練習がわかります。
+                    </p>
+                </FadeIn>
+
                 {/* サービス概要 */}
                 <FadeIn direction="up" delay={0.15}>
-                    <div className="mb-8 px-6 py-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 max-w-2xl mx-auto">
-                        <p className="text-base text-white font-medium leading-relaxed">
+                    <div className="mb-6 px-4 py-3 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 max-w-sm mx-auto">
+                        <p className="text-sm text-white font-medium leading-relaxed">
                             プロのピアノ講師による個別添削。<br />
                             LINEで動画を送るだけ、添削がすぐ届きます。
                         </p>
                     </div>
                 </FadeIn>
 
-                {/* チェックリスト */}
+                {/* Benefits - 3つの箇条書き */}
                 <FadeIn direction="up" delay={0.2}>
-                    <div className="mb-10 flex justify-center gap-8">
-                        {benefits.map((benefit, index) => (
-                            <div key={index} className="flex items-center gap-2">
-                                <Check className="w-5 h-5 text-accent-gold shrink-0" />
-                                <span className="text-base text-gray-200">{benefit}</span>
-                            </div>
-                        ))}
+                    <div className="backdrop-blur-sm bg-white/10 rounded-xl p-4 mb-6 mx-auto max-w-sm border border-white/20">
+                        <ul className="space-y-3 text-left">
+                            {benefits.map((benefit, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-white">
+                                    <Check className="w-4 h-4 text-accent-gold mt-0.5 shrink-0" />
+                                    <span>{benefit}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </FadeIn>
 
@@ -84,16 +91,17 @@ export function Hero() {
                         href="https://lin.ee/pcfImvr"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="w-full px-4"
                         onClick={() => trackEvent('line_button_click_fv')}
                     >
-                        <Button size="xl" className="px-12 py-6 mb-4">
+                        <Button size="xl" className="w-full mb-3 py-6">
                             <div className="flex flex-col items-center gap-1">
-                                <span className="text-lg font-bold">無料添削の枠を確保する</span>
-                                <span className="text-sm opacity-90">（LINE追加）</span>
+                                <span className="text-base font-bold">無料添削の枠を確保する</span>
+                                <span className="text-xs opacity-90">（LINE追加）</span>
                             </div>
                         </Button>
                     </a>
-                    <p className="text-sm text-gray-300 font-medium">
+                    <p className="text-xs text-gray-300 font-medium px-4">
                         登録無料｜しつこい配信なし
                     </p>
                 </FadeIn>

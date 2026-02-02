@@ -50,14 +50,14 @@ export function Closing() {
                             className="w-full md:w-auto mb-4"
                         >
                             <div className="flex flex-col items-center gap-1">
-                                <span className="text-lg font-bold">上達の第一歩を踏み出す →</span>
-                                <span className="text-xs opacity-90">LINE登録→無料相談→最短24時間で変化</span>
+                                <span className="text-lg font-bold">無料添削の枠を確保する</span>
+                                <span className="text-xs opacity-90">（LINE追加）</span>
                             </div>
                         </Button>
                     </a>
 
                     <p className="text-sm text-gray-200 mt-3">
-                        ※登録は無料です
+                        登録無料｜しつこい配信なし
                     </p>
                 </FadeIn>
             </div>

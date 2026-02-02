@@ -108,11 +108,14 @@ export function ExitIntentPopup() {
                                             size="lg"
                                             className="w-full mb-3"
                                         >
-                                            無料で相談してみる
+                                            <div className="flex flex-col items-center gap-1">
+                                                <span className="font-bold">無料添削の枠を確保する</span>
+                                                <span className="text-xs opacity-90">（LINE追加）</span>
+                                            </div>
                                         </Button>
                                     </a>
-                                    <p className="text-xs text-gray-400">
-                                        ※しつこい勧誘は一切ありません
+                                    <p className="text-xs text-gray-300">
+                                        登録無料｜しつこい配信なし
                                     </p>
 
                                     <button
