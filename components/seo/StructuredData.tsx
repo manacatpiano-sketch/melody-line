@@ -38,7 +38,7 @@ export function StructuredData() {
                         },
                         "price": "5980",
                         "priceCurrency": "JPY",
-                        "description": "月2回の添削 - 継続的なサポートで確実に上達"
+                        "description": "月4回の添削 - 継続的なサポートで確実に上達"
                     },
                     {
                         "@type": "Offer",

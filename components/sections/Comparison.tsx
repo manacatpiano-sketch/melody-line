@@ -1,86 +1,93 @@
 "use client";
 
 import { Section } from "@/components/ui/Section";
-import { GlassCard } from "@/components/ui/GlassCard";
 import FadeIn from "@/components/ui/FadeIn";
-import { Check } from "lucide-react";
-import Image from "next/image";
+import { Check, X as XIcon } from "lucide-react";
 
 export function Comparison() {
-    const features = [
-        {
-            image: "/assets/feature-24h.png",
-            title: "予約不要",
-            desc: "思い立ったらすぐ送れる。<br />深夜でも早朝でもOK",
-            highlight: "24時間受付"
-        },
-        {
-            image: "/assets/feature-reply.png",
-            title: "添削が届く",
-            desc: "改善点と次の練習が明確。<br />何をすればいいかわかります",
-            highlight: "具体的なアドバイス"
-        },
-        {
-            image: "/assets/feature-text.png",
-            title: "返信の形",
-            desc: "テキスト/音声/ポイント指示。<br />いつでも見返せます",
-            highlight: "LINEで完結"
-        }
-    ];
-
     return (
-        <Section className="bg-gradient-to-b from-primary-navy to-slate-900 relative overflow-hidden py-20 md:py-32">
-            {/* シネマティック背景 */}
-            <div className="absolute inset-0 bg-cinematic-light opacity-40" />
-
-            <div className="relative z-10">
-                <FadeIn direction="up">
-                    <div className="text-center mb-12 md:mb-16">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
-                            LINE添削の特徴
-                        </h2>
-                        <p className="text-gray-300">スマホひとつで、プロの指導が受けられる</p>
-                    </div>
-                </FadeIn>
-
-                {/* 3つの特徴カード */}
-                <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto px-4">
-                    {features.map((feature, index) => (
-                        <FadeIn key={index} direction="up" delay={index * 0.15}>
-                            <GlassCard className="p-8 h-full flex flex-col items-center text-center hover:border-accent-gold/50 transition-colors duration-300">
-                                {/* 画像 */}
-                                <div className="w-48 h-48 mb-6 rounded-2xl overflow-hidden shadow-xl">
-                                    <Image
-                                        src={feature.image}
-                                        alt={feature.title}
-                                        width={192}
-                                        height={192}
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-
-                                {/* タイトル */}
-                                <h3 className="text-xl font-bold text-white mb-3">
-                                    {feature.title}
-                                </h3>
-
-                                {/* ハイライト */}
-                                <div className="inline-block px-4 py-1 bg-accent-gold/20 rounded-full mb-4">
-                                    <span className="text-sm text-accent-gold font-bold">
-                                        {feature.highlight}
-                                    </span>
-                                </div>
-
-                                {/* 説明文 */}
-                                <p
-                                    className="text-gray-300 leading-relaxed flex-1"
-                                    dangerouslySetInnerHTML={{ __html: feature.desc }}
-                                />
-                            </GlassCard>
-                        </FadeIn>
-                    ))}
+        <Section className="bg-bg-cream py-16 md:py-24">
+            <FadeIn direction="up">
+                <div className="text-center mb-12">
+                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary-navy mb-4">
+                        なぜ、Melody LINEが選ばれるのか
+                    </h2>
+                    <p className="text-gray-600">
+                        「検査結果の説明」ではなく、「処方箋」をお届けします。
+                    </p>
                 </div>
-            </div>
+            </FadeIn>
+
+            <FadeIn direction="up" delay={0.1}>
+                <div className="max-w-4xl mx-auto overflow-x-auto">
+                    <table className="w-full border-collapse bg-white rounded-xl shadow-sm mt-4">
+                        <thead>
+                            <tr>
+                                <th className="text-left p-4 md:p-5 bg-gray-50 text-gray-500 text-sm font-medium w-1/4">比較ポイント</th>
+                                <th className="text-center p-4 md:p-5 bg-gray-50 text-gray-500 text-sm font-medium w-1/4">独学<br /><span className="text-xs font-normal">(YouTube等)</span></th>
+                                <th className="text-center p-4 md:p-5 bg-gray-50 text-gray-500 text-sm font-medium w-1/4">単発添削<br /><span className="text-xs font-normal">(他社サービス)</span></th>
+                                <th className="text-center p-4 md:p-5 bg-primary-navy text-white text-sm font-bold w-1/4 relative">
+                                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent-gold text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">おすすめ</span>
+                                    Melody LINE
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100">
+                            <tr>
+                                <td className="p-4 md:p-5 text-sm font-medium text-gray-700">月額コスト</td>
+                                <td className="p-4 md:p-5 text-center text-sm text-gray-600">無料</td>
+                                <td className="p-4 md:p-5 text-center text-sm text-gray-600">¥770〜/回</td>
+                                <td className="p-4 md:p-5 text-center text-sm font-bold text-primary-navy bg-accent-gold/10">¥1,480〜/月</td>
+                            </tr>
+                            <tr>
+                                <td className="p-4 md:p-5 text-sm font-medium text-gray-700">プロの添削</td>
+                                <td className="p-4 md:p-5 text-center"><XIcon className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                                <td className="p-4 md:p-5 text-center"><Check className="w-5 h-5 text-green-500 mx-auto" /></td>
+                                <td className="p-4 md:p-5 text-center bg-accent-gold/10"><Check className="w-5 h-5 text-accent-gold mx-auto" /></td>
+                            </tr>
+                            <tr>
+                                <td className="p-4 md:p-5 text-sm font-medium text-gray-700">練習メニュー</td>
+                                <td className="p-4 md:p-5 text-center"><XIcon className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                                <td className="p-4 md:p-5 text-center"><XIcon className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                                <td className="p-4 md:p-5 text-center bg-accent-gold/10"><Check className="w-5 h-5 text-accent-gold mx-auto" /></td>
+                            </tr>
+                            <tr>
+                                <td className="p-4 md:p-5 text-sm font-medium text-gray-700">あなたの成長を<br className="md:hidden" />覚えている</td>
+                                <td className="p-4 md:p-5 text-center"><XIcon className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                                <td className="p-4 md:p-5 text-center"><XIcon className="w-5 h-5 text-gray-300 mx-auto" /></td>
+                                <td className="p-4 md:p-5 text-center bg-accent-gold/10"><Check className="w-5 h-5 text-accent-gold mx-auto" /></td>
+                            </tr>
+                            <tr>
+                                <td className="p-4 md:p-5 text-sm font-medium text-gray-700">自分のペースで</td>
+                                <td className="p-4 md:p-5 text-center"><Check className="w-5 h-5 text-green-500 mx-auto" /></td>
+                                <td className="p-4 md:p-5 text-center"><Check className="w-5 h-5 text-green-500 mx-auto" /></td>
+                                <td className="p-4 md:p-5 text-center bg-accent-gold/10"><Check className="w-5 h-5 text-accent-gold mx-auto" /></td>
+                            </tr>
+                            <tr>
+                                <td className="p-4 md:p-5 text-sm font-medium text-gray-700">講師の質</td>
+                                <td className="p-4 md:p-5 text-center text-sm text-gray-600">ばらつきあり</td>
+                                <td className="p-4 md:p-5 text-center text-sm text-gray-600">音大卒</td>
+                                <td className="p-4 md:p-5 text-center text-sm font-bold text-primary-navy bg-accent-gold/10">桐朋学園大学卒</td>
+                            </tr>
+                            <tr>
+                                <td className="p-4 md:p-5 text-sm font-medium text-gray-700">いつでも解約OK</td>
+                                <td className="p-4 md:p-5 text-center text-gray-400">—</td>
+                                <td className="p-4 md:p-5 text-center text-gray-400">—</td>
+                                <td className="p-4 md:p-5 text-center bg-accent-gold/10"><Check className="w-5 h-5 text-accent-gold mx-auto" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </FadeIn>
+
+            <FadeIn direction="up" delay={0.3}>
+                <div className="text-center mt-10">
+                    <p className="text-primary-navy font-bold text-lg md:text-xl">
+                        1回きりの添削ではなく、<br className="md:hidden" />
+                        <span className="text-accent-gold">あなたの上達を1ヶ月間見守ります。</span>
+                    </p>
+                </div>
+            </FadeIn>
         </Section>
     );
 }

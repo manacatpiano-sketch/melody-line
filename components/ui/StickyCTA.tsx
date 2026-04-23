@@ -39,10 +39,10 @@ export function StickyCTA() {
                             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
                                 <div className="text-center md:text-left flex-1">
                                     <p className="text-white font-bold text-sm md:text-base mb-1">
-                                        限定枠が埋まる前に
+                                        毎月の指導枠は5名限定
                                     </p>
                                     <p className="text-gray-300 text-xs md:text-sm">
-                                        ※月間の指導枠には限りがあります
+                                        ※ 初回の添削は無料です
                                     </p>
                                 </div>
                                 <a
@@ -54,8 +54,8 @@ export function StickyCTA() {
                                 >
                                     <Button size="lg" className="w-full h-14">
                                         <div className="flex flex-col items-center gap-0.5">
-                                            <span className="font-bold text-sm">無料添削の枠を確保する</span>
-                                            <span className="text-xs opacity-90">（LINE追加）</span>
+                                            <span className="font-bold text-sm">【初回無料】プロの添削を体験</span>
+                                            <span className="text-xs opacity-90">＊ 1タップで登録</span>
                                         </div>
                                     </Button>
                                 </a>

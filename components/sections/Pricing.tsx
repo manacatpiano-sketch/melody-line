@@ -16,7 +16,7 @@ export function Pricing() {
                 <div className="text-center mb-16 md:mb-20">
                     <FadeIn direction="up">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
-                            あなたに合わせた<br className="md:hidden" />指導プラン
+                            対面レッスンの1/5の価格で、<br className="md:hidden" />プロが見てくれる
                         </h2>
                         <p className="text-gray-300 text-lg md:text-xl">
                             桐朋の研鑽を、<br className="md:hidden" />あなたの日常の練習に。
@@ -41,7 +41,7 @@ export function Pricing() {
                             </div>
 
                             <p className="text-accent-gold font-medium mb-6 text-sm">
-                                まずは一度、世界を知る耳に預けてみる
+                                まずはお気軽に、プロの視点を体験
                             </p>
 
                             <ul className="space-y-3 mb-8 flex-1">
@@ -55,7 +55,7 @@ export function Pricing() {
                                 </li>
                                 <li className="flex items-start gap-3 text-sm text-gray-200">
                                     <Check className="w-4 h-4 text-accent-gold mt-0.5 shrink-0" />
-                                    <span>心理的障壁を下げる<br className="md:hidden" />「体験」の入り口</span>
+                                    <span>まずは気軽に試せる<br className="md:hidden" />はじめの一歩に最適</span>
                                 </li>
                             </ul>
 
@@ -66,8 +66,7 @@ export function Pricing() {
                             <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="w-full">
                                 <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-primary-navy py-5">
                                     <div className="flex flex-col items-center gap-1">
-                                        <span className="font-bold">無料添削の枠を確保する</span>
-                                        <span className="text-xs opacity-90">（LINE追加）</span>
+                                        <span className="font-bold">まずは1回試してみる</span>
                                     </div>
                                 </Button>
                             </a>
@@ -89,16 +88,15 @@ export function Pricing() {
                                 </div>
 
                                 <div className="mb-4">
-                                    <p className="text-gray-400 line-through text-lg mb-1">通常価格: ¥9,800/月</p>
                                     <span className="text-5xl font-bold bg-gradient-to-r from-accent-gold to-yellow-300 bg-clip-text text-transparent">¥5,980</span>
                                     <span className="text-gray-300 ml-2">/ 月（税込）</span>
                                 </div>
 
                                 <p className="text-accent-gold font-bold mb-2 text-lg">
-                                    桐朋の研鑽を、あなたの日常の練習に。
+                                    月4回、プロに見てもらえる<br className="md:hidden" />安心感。
                                 </p>
                                 <p className="text-sm text-gray-300 mb-6">
-                                    ※1回あたり約1,500円という圧倒的価値
+                                    ※1回あたり約1,500円。対面レッスンの約1/5の価格です。
                                 </p>
 
                                 <ul className="space-y-4 mb-8 flex-1">
@@ -108,7 +106,7 @@ export function Pricing() {
                                     </li>
                                     <li className="flex items-start gap-3 text-base text-white font-medium">
                                         <Check className="w-5 h-5 text-accent-gold mt-0.5 shrink-0" />
-                                        <span>1,000文字超のアドバイス＋楽譜書き込み添削</span>
+                                        <span>1,000文字超の詳細テキストアドバイス</span>
                                     </li>
                                     <li className="flex items-start gap-3 text-base text-white font-medium">
                                         <Check className="w-5 h-5 text-accent-gold mt-0.5 shrink-0" />
@@ -116,7 +114,7 @@ export function Pricing() {
                                     </li>
                                     <li className="flex items-start gap-3 text-base text-accent-gold font-bold">
                                         <Check className="w-5 h-5 text-accent-gold mt-0.5 shrink-0" />
-                                        <span>上達を実感し、理想の音へ近づく。最も選ばれている継続プラン</span>
+                                        <span>ほとんどの方がこのプランから始めています</span>
                                     </li>
                                 </ul>
 
@@ -127,8 +125,7 @@ export function Pricing() {
                                 <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="w-full">
                                     <Button variant="primary" size="lg" className="w-full py-5">
                                         <div className="flex flex-col items-center gap-1">
-                                            <span className="font-bold">無料添削の枠を確保する</span>
-                                            <span className="text-xs opacity-90">（LINE追加）</span>
+                                            <span className="font-bold">このプランで始める</span>
                                         </div>
                                     </Button>
                                 </a>
@@ -151,13 +148,13 @@ export function Pricing() {
                             <p className="text-gray-400 mb-2">/ 月（税込）</p>
 
                             <p className="text-yellow-300 font-bold mb-6 text-base leading-relaxed">
-                                前野 真奈を、あなたの専属講師として独占する。
+                                前野 真奈が、<br className="md:hidden" />あなたの上達を直接サポートします。
                             </p>
 
                             <ul className="space-y-3 mb-8 flex-1">
                                 <li className="flex items-start gap-3 text-sm text-gray-200 font-medium">
                                     <Check className="w-4 h-4 text-accent-gold mt-0.5 shrink-0" />
-                                    <span>優先動画添削（回数無制限）</span>
+                                    <span>動画添削が回数無制限</span>
                                 </li>
                                 <li className="flex items-start gap-3 text-sm text-gray-200 font-medium">
                                     <Check className="w-4 h-4 text-accent-gold mt-0.5 shrink-0" />
@@ -169,7 +166,7 @@ export function Pricing() {
                                 </li>
                                 <li className="flex items-start gap-3 text-sm text-yellow-300 font-bold">
                                     <Check className="w-4 h-4 text-accent-gold mt-0.5 shrink-0" />
-                                    <span>最高級のブランド価値を提示</span>
+                                    <span>あなただけの上達プランを一緒に設計</span>
                                 </li>
                             </ul>
 
@@ -180,8 +177,7 @@ export function Pricing() {
                             <a href="https://lin.ee/pcfImvr" target="_blank" rel="noopener noreferrer" className="w-full">
                                 <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-primary-navy py-5">
                                     <div className="flex flex-col items-center gap-1">
-                                        <span className="font-bold">無料添削の枠を確保する</span>
-                                        <span className="text-xs opacity-90">（LINE追加）</span>
+                                        <span className="font-bold">詳しく相談する</span>
                                     </div>
                                 </Button>
                             </a>
@@ -192,8 +188,8 @@ export function Pricing() {
                 {/* 安心メッセージ */}
                 <FadeIn direction="up" delay={0.4}>
                     <div className="text-center mt-12 md:mt-16">
-                        <p className="text-gray-400 text-sm mb-2">※登録は無料です</p>
-                        <p className="text-gray-400 text-sm">※月間の指導枠には限りがございます</p>
+                        <p className="text-gray-400 text-sm mb-2">※LINE登録は無料です</p>
+                        <p className="text-gray-400 text-sm">※毎月の指導枠は5名限定です</p>
                     </div>
                 </FadeIn>
             </div>

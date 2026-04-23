@@ -18,9 +18,15 @@ export function Closing() {
                     </h2>
                 </FadeIn>
 
-                <FadeIn direction="up" delay={0.2}>
+                <FadeIn direction="up" delay={0.15}>
+                    <p className="text-gray-400 text-base md:text-lg mb-6 leading-relaxed italic">
+                        完璧じゃなくていい。<br className="md:hidden" />今のあなたの演奏を、聴かせてください。
+                    </p>
+                </FadeIn>
+
+                <FadeIn direction="up" delay={0.25}>
                     <p className="text-gray-300 mb-10 text-base md:text-xl">
-                        今なら、初回相談時の簡単なご質問は<span className="text-accent-gold font-bold">無料</span>でお答えします。
+                        初回の添削は<span className="text-accent-gold font-bold">無料</span>。<br className="md:hidden" />まずは1曲、聞かせてください。
                     </p>
                 </FadeIn>
 
@@ -29,16 +35,22 @@ export function Closing() {
                         <div className="space-y-2 text-sm md:text-base text-gray-300">
                             <p className="flex items-center gap-2 justify-center">
                                 <span className="text-accent-gold">✓</span>
-                                ご相談は無料です
+                                初回の添削は無料です
                             </p>
                             <p className="flex items-center gap-2 justify-center">
                                 <span className="text-accent-gold">✓</span>
                                 無理な勧誘は一切ありません
                             </p>
                             <p className="flex items-center gap-2 justify-center">
-                                <span className="text-red-400">⚠</span>
-                                <span className="text-yellow-200 font-medium">月間の指導枠には限りがございます</span>
+                                <span className="text-accent-gold">✓</span>
+                                合わなければいつでも解約OK
                             </p>
+                            <div className="border-t border-white/10 pt-3 mt-3">
+                                <p className="flex items-center gap-2 justify-center">
+                                    <span className="text-red-400">⚠</span>
+                                    <span className="text-yellow-200 font-bold">毎月の指導枠は5名限定です</span>
+                                </p>
+                            </div>
                         </div>
                     </GlassCard>
                 </FadeIn>
@@ -50,15 +62,15 @@ export function Closing() {
                             className="w-full md:w-auto mb-4"
                         >
                             <div className="flex flex-col items-center gap-1">
-                                <span className="text-lg font-bold">無料添削の枠を確保する</span>
-                                <span className="text-xs opacity-90">（LINE追加）</span>
+                                <span className="text-lg font-bold">【初回無料】プロの添削を体験する</span>
+                                <span className="text-xs opacity-90">＊ LINE友だち追加は1タップで完了</span>
                             </div>
                         </Button>
                     </a>
 
-                    <p className="text-sm text-gray-200 mt-3">
-                        登録無料｜しつこい配信なし
-                    </p>
+                    <div className="mt-6 text-sm text-gray-400 space-y-1">
+                        <p>① LINEで友だち追加 → ② 「添削希望」と送信 → ③ 24時間以内に講師からご連絡</p>
+                    </div>
                 </FadeIn>
             </div>
         </Section>

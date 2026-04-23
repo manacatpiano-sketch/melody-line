@@ -19,7 +19,7 @@ export function ExitIntentPopup() {
             }
         };
 
-        // モバイル: ページの80%までスクロールしたが、CTAをクリックしていない
+        // モバイル: ページの60%までスクロールしたが、CTAをクリックしていない
         const handleScroll = () => {
             if (hasShown || hasCTAClicked) return;
 
@@ -28,7 +28,7 @@ export function ExitIntentPopup() {
             const clientHeight = window.innerHeight;
             const scrollPercentage = (scrollTop + clientHeight) / scrollHeight;
 
-            if (scrollPercentage >= 0.8) {
+            if (scrollPercentage >= 0.6) {
                 setIsVisible(true);
                 setHasShown(true);
             }
@@ -98,8 +98,8 @@ export function ExitIntentPopup() {
                                         ちょっと待ってください！
                                     </h3>
                                     <p className="text-gray-300 mb-6 leading-relaxed">
-                                        まずは気軽に相談してみませんか？<br />
-                                        あなたの演奏の課題が<span className="text-accent-gold font-bold">24時間でわかります</span>。
+                                        あなたの演奏を1本送るだけ。<br />
+                                        プロが<span className="text-accent-gold font-bold">24時間以内</span>に<br className="md:hidden" />改善ポイントをお伝えします。
                                     </p>
 
                                     {/* CTA */}
@@ -109,8 +109,8 @@ export function ExitIntentPopup() {
                                             className="w-full mb-3"
                                         >
                                             <div className="flex flex-col items-center gap-1">
-                                                <span className="font-bold">無料添削の枠を確保する</span>
-                                                <span className="text-xs opacity-90">（LINE追加）</span>
+                                                <span className="font-bold">【初回無料】プロの添削を体験する</span>
+                                                <span className="text-xs opacity-90">＊ LINE友だち追加は1タップ</span>
                                             </div>
                                         </Button>
                                     </a>

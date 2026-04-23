@@ -162,7 +162,7 @@ export default function TokuteiPage() {
                         </nav>
 
                         <p className="text-gray-500 text-xs">
-                            © 2024 Melody LINE. All rights reserved.
+                            © 2026 Melody LINE. All rights reserved.
                         </p>
                     </div>
                 </div>

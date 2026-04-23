@@ -18,7 +18,7 @@ export function Instructor() {
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
                             指導者紹介
                         </h2>
-                        <p className="text-gray-300 text-lg">あなたの専属マエストロ</p>
+                        <p className="text-gray-300 text-lg">あなたの演奏に寄り添う講師</p>
                     </div>
                 </FadeIn>
 
@@ -30,7 +30,7 @@ export function Instructor() {
                                 <div className="absolute inset-0 bg-accent-gold/10 mix-blend-overlay z-10" />
                                 <div className="w-full h-full relative">
                                     <Image
-                                        src="/assets/instructor.png"
+                                        src="/assets/instructor.webp"
                                         alt="前野 真奈"
                                         fill
                                         className="object-contain"
@@ -44,7 +44,14 @@ export function Instructor() {
                                     <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                                         前野 真奈
                                     </h3>
-                                    <p className="text-gray-300 mb-8 tracking-widest">Mana Maeno</p>
+                                    <p className="text-gray-300 mb-6 tracking-widest">Mana Maeno</p>
+
+                                    {/* 講師ストーリー */}
+                                    <p className="text-gray-300 text-sm leading-relaxed mb-8 border-l-2 border-accent-gold/40 pl-4">
+                                        桐朋学園大学を卒業後、「大人がもっと気軽にピアノを楽しめる場所」を作りたくてこのサービスを始めました。
+                                        教室に通う時間がない。人前で弾くのが恥ずかしい。
+                                        そんな声をたくさん聞いてきたからこそ、LINEで動画を送るだけ──という形にたどり着きました。
+                                    </p>
 
                                     {/* ★★★ 桐朋学園大学バッジ - 金箔押し・エンボス加工風 ★★★ */}
                                     <div className="mb-10 relative">
@@ -91,10 +98,10 @@ export function Instructor() {
                                             </div>
                                             <div>
                                                 <p className="text-base font-bold text-white mb-1">
-                                                    四半世紀を超え、ピアノと共に歩む
+                                                    初心者から上級者まで幅広く指導
                                                 </p>
                                                 <p className="text-sm text-gray-300">
-                                                    25年以上の研鑽が生む、確かな指導力
+                                                    一人ひとりに合わせた丁寧なレッスンが強み
                                                 </p>
                                             </div>
                                         </div>
@@ -108,7 +115,7 @@ export function Instructor() {
                                                     ベートーヴェン協会管弦楽団とソリスト共演
                                                 </p>
                                                 <p className="text-sm text-gray-300">
-                                                    プロの楽団と渡り合った、本物の演奏表現を伝授
+                                                    プロの楽団と共演した、<br className="md:hidden" />本物の演奏表現を伝授
                                                 </p>
                                             </div>
                                         </div>
@@ -136,7 +143,7 @@ export function Instructor() {
                                                     高等学校教諭一種免許状（音楽）保持
                                                 </p>
                                                 <p className="text-sm text-gray-300">
-                                                    教育学的根拠に基づいた「わかりやすい言語化」が得意
+                                                    初心者でもわかる言葉で、一人ひとりに合わせて伝えます
                                                 </p>
                                             </div>
                                         </div>

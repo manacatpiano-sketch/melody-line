@@ -77,7 +77,7 @@ export default function RootLayout({
     return (
         <html lang="ja">
             <GoogleAnalytics />
-            <body className={`${notoSerif.variable} ${notoSans.variable} font-sans text-text-body bg-bg-cream antialiased`}>
+            <body className={`${notoSerif.variable} ${notoSans.variable} font-sans text-text-body bg-primary-navy antialiased`}>
                 {children}
             </body>
         </html>

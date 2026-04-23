@@ -5,19 +5,19 @@ import Image from "next/image";
 export function Solution() {
     const features = [
         {
-            image: "/assets/smartphone-sending.png",
-            title: "スマホひとつで完結",
-            desc: "撮影してLINEで送るだけ。移動時間ゼロで、自宅がレッスン室になります。"
+            image: "/assets/smartphone-sending.webp",
+            title: "通わず上達。自宅がレッスン室に",
+            desc: "撮影してLINEで送るだけ。\n移動時間ゼロで、あなたのペースで上達できます。"
         },
         {
-            image: "/assets/sheet-annotation.png",
-            title: "楽譜に残る、プロの添削",
-            desc: "感覚的な言葉だけでなく、楽譜への具体的な書き込みで指示。何度でも見返せます。"
+            image: "/assets/available-24h.webp",
+            title: "「ここを直せば変わる」が24時間で届く",
+            desc: "あなたの演奏を見たプロが、\n具体的な改善ポイントをテキストでお伝えします。\n何度でも見返せます。"
         },
         {
-            image: "/assets/available-24h.png",
-            title: "24時間いつでも受付",
-            desc: "思い立った時にすぐ送信。あなたの練習ペースを崩しません。"
+            image: "/assets/video-thumbnail.webp",
+            title: "思い立ったら、すぐ送れる",
+            desc: "24時間いつでも受付。\n仕事帰りの深夜でも、休日の朝でも。\n練習ペースを崩しません。"
         }
     ];
 
@@ -26,8 +26,9 @@ export function Solution() {
             <div className="text-center mb-16">
                 <FadeIn direction="up">
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary-navy">
-                        そのモヤモヤ、<br />プロの「客観的な視点」が<br className="md:hidden" />解決します。
+                        「今日の練習メニュー」が、<br />プロから届く。
                     </h2>
+                    <p className="text-text-body mt-4">もう、何を練習すればいいか迷わない。</p>
                 </FadeIn>
             </div>
 
@@ -45,7 +46,7 @@ export function Solution() {
                                 />
                             </div>
                             <h3 className="text-xl font-bold text-primary-navy mb-4">{feature.title}</h3>
-                            <p className="text-text-body leading-relaxed">{feature.desc}</p>
+                            <p className="text-text-body leading-relaxed whitespace-pre-line">{feature.desc}</p>
                         </div>
                     </FadeIn>
                 ))}

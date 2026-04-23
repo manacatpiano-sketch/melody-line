@@ -2,27 +2,34 @@
 
 import { Section } from "@/components/ui/Section";
 import FadeIn from "@/components/ui/FadeIn";
-import { MessageCircle, FileText, Camera } from "lucide-react";
+import { MessageCircle, Camera, Mail } from "lucide-react";
 
 export function Process() {
     const steps = [
         {
             icon: MessageCircle,
             step: "Step 01",
-            title: "LINE追加",
-            desc: "友だち追加後「無料添削希望」と送信"
-        },
-        {
-            icon: FileText,
-            step: "Step 02",
-            title: "悩みを伝える",
-            desc: "リズム、指使い、強弱など、気になる点を教えてください"
+            title: "LINEで友だち追加",
+            desc: "1タップで登録完了",
+            tips: null
         },
         {
             icon: Camera,
+            step: "Step 02",
+            title: "演奏動画を送る",
+            desc: "完璧じゃなくて大丈夫。今のありのままの演奏を聴かせてください",
+            tips: [
+                "両手が映ればOK（顔出し不要）",
+                "ミスタッチしてもそのまま送ってください",
+                "30秒〜1分の短い動画で十分です"
+            ]
+        },
+        {
+            icon: Mail,
             step: "Step 03",
-            title: "動画を送る",
-            desc: "手元だけでOK"
+            title: "プロからアドバイスが届く",
+            desc: "原則24時間以内に、あなた専用の練習メニューをお伝えします",
+            tips: null
         }
     ];
 
@@ -31,7 +38,7 @@ export function Process() {
             <FadeIn direction="up">
                 <div className="text-center mb-16">
                     <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary-navy mb-4">
-                        受講までの流れ
+                        無料体験までの3ステップ
                     </h2>
                     <p className="text-text-body">スマホひとつで、驚くほど簡単。</p>
                 </div>
@@ -53,6 +60,16 @@ export function Process() {
                                 </div>
                                 <h3 className="text-lg font-bold text-primary-navy mb-2">{item.title}</h3>
                                 <p className="text-sm text-gray-700 leading-relaxed">{item.desc}</p>
+                                {item.tips && (
+                                    <div className="mt-3 bg-white rounded-lg px-4 py-3 text-left w-full">
+                                        {item.tips.map((tip, j) => (
+                                            <p key={j} className="text-xs text-gray-500 flex items-start gap-1.5 mb-1 last:mb-0">
+                                                <span className="text-accent-gold mt-0.5">✓</span>
+                                                {tip}
+                                            </p>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         </FadeIn>
                     ))}
