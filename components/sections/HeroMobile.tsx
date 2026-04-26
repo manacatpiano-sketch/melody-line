@@ -15,7 +15,7 @@ export function HeroMobile() {
     ];
 
     return (
-        <Section fullWidth className="md:hidden h-[100svh] flex items-center justify-center p-0 relative overflow-hidden pb-[80px]">
+        <Section fullWidth className="md:hidden min-h-[100svh] flex items-center justify-start p-0 relative overflow-hidden pb-[80px]">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -31,7 +31,7 @@ export function HeroMobile() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 text-center px-4 w-full h-full flex flex-col justify-center">
+            <div className="relative z-10 text-center px-4 w-full flex flex-col justify-start pt-16">
                 <FadeIn direction="up">
                     <div className="inline-block mb-4 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-accent-gold/50">
                         <span className="text-accent-gold font-bold text-xs">🎹 LINEで完結するピアノレッスン</span>
