@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "ja_JP",
-        url: "https://melodyline.jp/",
+        url: "https://www.melody-line.jp/",
         siteName: "Melody LINE",
         title: "Melody LINE - あなただけの音楽室",
         description: "24時間以内にプロが添削するピアノレッスン。LINEで完結、初回¥1,480から。",
         images: [
             {
-                url: "/og-image.png",
+                url: "https://www.melody-line.jp/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Melody LINE - ピアノオンラインレッスン",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Melody LINE - あなただけの音楽室",
         description: "24時間以内にプロが添削するピアノレッスン。LINEで完結、初回¥1,480から。",
-        images: ["/twitter-image.png"],
+        images: ["https://www.melody-line.jp/og-image.png"],
         creator: "@melodyline_jp",
     },
     robots: {

@@ -21,8 +21,8 @@ export function ShootingTips() {
         {
             icon: Smartphone,
             point: "POINT 3",
-            title: "30秒〜1分でOK",
-            desc: "1曲まるごとでなくて大丈夫。気になる部分だけで十分です。長くても3分以内が目安です。"
+            title: "30秒〜5分でOK",
+            desc: "1曲まるごとでなくて大丈夫。気になる部分だけで十分です。"
         }
     ];
 
